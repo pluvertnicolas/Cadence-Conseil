@@ -442,7 +442,7 @@ export default function NPConsultingV6() {
             <div className="tag">Portfolio</div>
             <h2 className="h2" style={{ color:"#EEECE8" }}>RÉALISATIONS</h2>
           </Reveal>
-          <div className="real-grid" style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:1, background:"rgba(238,236,232,0.08)", marginTop:48 }}>
+          <div className="real-grid" style={{ display:"grid", gridTemplateColumns:"repeat(2,1fr)", gap:1, background:"rgba(238,236,232,0.08)", marginTop:48 }}>
             {REALISATIONS.map((r, i) => (
               <Reveal key={i} delay={i * 0.08}>
                 <div className="real-card" style={{ background:"#111", borderColor:"rgba(238,236,232,0.1)" }}>
