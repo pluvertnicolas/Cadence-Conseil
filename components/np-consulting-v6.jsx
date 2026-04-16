@@ -231,6 +231,7 @@ export default function NPConsultingV6() {
         .real-card {
           border:2px solid #111; padding:40px; background:#fff;
           transition:all 0.3s; position:relative;
+          display:flex; flex-direction:column; height:100%;
         }
         .real-card:hover { background:#131411; color:#EEECE8; }
         .real-card:hover .real-label { color:rgba(238,236,232,0.4); }
@@ -442,7 +443,7 @@ export default function NPConsultingV6() {
             <div className="tag">Portfolio</div>
             <h2 className="h2" style={{ color:"#EEECE8" }}>RÉALISATIONS</h2>
           </Reveal>
-          <div className="real-grid" style={{ display:"grid", gridTemplateColumns:"repeat(2,1fr)", gap:1, background:"rgba(238,236,232,0.08)", marginTop:48 }}>
+          <div className="real-grid" style={{ display:"grid", gridTemplateColumns:"repeat(2,1fr)", gap:1, background:"rgba(238,236,232,0.08)", marginTop:48, alignItems:"stretch" }}>
             {REALISATIONS.map((r, i) => (
               <Reveal key={i} delay={i * 0.08}>
                 <div className="real-card" style={{ background:"#111", borderColor:"rgba(238,236,232,0.1)" }}>
