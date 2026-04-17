@@ -9,9 +9,9 @@ const NAV_LABELS = { accueil: "Accueil", apropos: "À propos", offres: "Offres",
 
 const PACKAGES = [
   { id: "audit", n: "01", title: "Audit & Stratégie Média", sub: "Point de départ", desc: "Diagnostic complet de votre écosystème média. Mix canal, performances, outils, organisation. Livrable : recommandation stratégique actionnable avec plan d'action priorisé.", deliverables: ["Audit de l'existant (mix média, KPIs, outils)", "Benchmark sectoriel", "Recommandation stratégique", "Plan d'action priorisé"], ideal: "Annonceurs ou agences qui veulent un regard extérieur senior avant d'engager des budgets." },
-  { id: "pilotage", n: "02", title: "Pilotage & Performance", sub: "Exécution maîtrisée", desc: "Coordination de vos dispositifs multicanaux (display, vidéo, DOOH, social). Je cadre la stratégie, pilote les KPIs et coordonne les spécialistes trading.", deliverables: ["Plan média multicanaux", "Coordination des équipes trading", "Suivi de performance en continu", "Reporting et recommandations d'optimisation"], ideal: "Annonceurs avec des campagnes actives qui manquent de bande passante." },
+  { id: "pilotage", n: "02", title: "Pilotage & Performance", sub: "Exécution maîtrisée", desc: "Coordination de vos dispositifs multicanaux, display, vidéo, CTV, DOOH, social. J'élabore les plans, anime les équipes trading et assure le suivi des KPIs de bout en bout.", deliverables: ["Plan média multicanaux", "Coordination des équipes trading", "Suivi de performance en continu", "Reporting et recommandations d'optimisation"], ideal: "Annonceurs avec des campagnes actives qui manquent de bande passante." },
   { id: "relation", n: "03", title: "Relation Client & Satisfaction", sub: "Avantage structurel", desc: "Structuration de vos process de suivi client : rituels, indicateurs de satisfaction, formation des équipes. Transformer la relation client en levier de rétention.", deliverables: ["Audit des process CSM existants", "Rituels clients (kick-off, bilans, post-mortem)", "Indicateurs NPS et NRR", "Formation et coaching des équipes"], ideal: "Agences et ad tech qui veulent réduire le churn et augmenter la valeur client." },
-  { id: "conseil", n: "04", title: "Conseil & Développement d'Offre", sub: "Croissance structurée", desc: "Accompagnement stratégique sur le positionnement, l'évolution de votre offre et l'identification d'opportunités de croissance.", deliverables: ["Analyse de positionnement", "Stratégie d'évolution d'offre", "Identification de partenariats stratégiques", "Business plan et roadmap"], ideal: "Agences ou ad tech en phase de structuration ou de pivot stratégique." },
+  { id: "conseil", n: "04", title: "Conseil & Développement d'Offre", sub: "Croissance structurée", desc: "Accompagnement stratégique sur votre positionnement, l'évolution de vos offres et l'identification de partenariats à valeur. Une perspective externe senior, nourrie de 10 ans de terrain en agence et ad tech.", deliverables: ["Analyse de positionnement", "Stratégie d'évolution d'offre", "Identification de partenariats stratégiques", "Business plan et roadmap"], ideal: "Agences ou ad tech en phase de structuration ou de pivot stratégique." },
 ];
 
 const REALISATIONS = [
@@ -60,7 +60,7 @@ const REALISATIONS = [
 ];
 
 const MILESTONES = [
-  { year: "2025", role: "Fondateur", co: "Cadence Conseil", desc: "Consultant indépendant.", current: true },
+  { year: "2025", role: "Fondateur", co: "Cadence Conseil", desc: "Lancement de Cadence Conseil. Accompagnement d'agences, d'annonceurs et d'acteurs ad tech sur leurs stratégies média et leur relation client.", current: true },
   { year: "2024", role: "Directeur du Planning et de la Stratégie Média", co: "Olyn Group · Mozoo", desc: "+5M€ budget, 250+ campagnes/an, 8 pers." },
   { year: "2023", role: "Directeur des Opérations", co: "Mozoo", desc: "Partenariats ad tech, lancement offre vidéo." },
   { year: "2019", role: "Directeur de Projets CSM", co: "Mozoo", desc: "+10% CA annuel, NRR >110%." },
@@ -301,7 +301,7 @@ export default function NPConsultingV6() {
           <Reveal delay={0.2}>
             <div style={{ display:"flex", gap:64, alignItems:"flex-start", flexWrap:"wrap" }}>
               <p className="body-text" style={{ maxWidth:440 }}>
-                10 ans d'expérience en agence digitale. Je pilote vos investissements média et structure votre relation client pour que vous puissiez vous concentrer sur votre cœur de métier.
+                10 ans en agence digitale parisienne, à piloter des stratégies média multicanaux et des équipes opérationnelles. +5M€ de budget média géré par an, +250 campagnes coordonnées, des clients qui restent et une croissance qui se mesure.
               </p>
               <div style={{ display:"flex", gap:12, flexWrap:"wrap", paddingTop:2 }}>
                 <button className="btn" onClick={() => go("contact")}>Discutons →</button>
@@ -361,7 +361,7 @@ export default function NPConsultingV6() {
                   <span style={{ color:"#3D6B5E", fontStyle:"italic" }}>SENIOR</span>
                 </h2>
                 <p style={{ fontFamily:"'Barlow Condensed',sans-serif", fontSize:22, fontWeight:400, fontStyle:"italic", lineHeight:1.4, color:"rgba(238,236,232,0.6)", marginBottom:28, maxWidth:500 }}>
-                  J'opère stratégiquement sur l'ensemble du dispositif : de la recommandation au pilotage, en coordonnant les expertises au bon moment pour maximiser la performance.
+                  10 ans en agence digitale parisienne, à piloter des stratégies média multicanaux et des équipes opérationnelles. Avec une attention particulière à la structuration des process, l'automatisation et la mise en place d'indicateurs clairs pour suivre les performances business comme les dynamiques d'équipe.
                 </p>
                 <p className="body-text" style={{ color:"rgba(238,236,232,0.5)", marginBottom:20 }}>
                   10 ans en agence digitale parisienne, de Key Account Manager à Directeur de la Stratégie Média. Progression construite sur la relation client, le pilotage de budgets significatifs (+5M€/an) et la structuration d'équipes performantes.
