@@ -370,7 +370,7 @@ export default function NPConsultingV6() {
                   Entre Bordeaux et Paris, j'accompagne agences, acteurs ad tech et annonceurs, avec un objectif commun : gagner en efficacité sur les dispositifs média et la relation client.
                 </p>
                 <div style={{ display:"flex", flexWrap:"wrap", gap:8 }}>
-                  {["Stratégie média","Pilotage multicanaux","Relation client CSM","Performance reporting","Développement d'offre","Partenariats ad tech"].map((c, i) => (
+                  {["Stratégie média","Pilotage multicanaux","Relation client CSM","Performance reporting","Développement d'offre","Partenariats ad tech","Management d'équipe","Recrutement","Gouvernance & board"].map((c, i) => (
                     <span key={i} className="pill" style={{ borderColor:"rgba(238,236,232,0.15)", color:"rgba(238,236,232,0.4)" }}>{c}</span>
                   ))}
                 </div>
