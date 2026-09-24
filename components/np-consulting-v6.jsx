@@ -8,27 +8,27 @@ const SECTIONS = ["accueil", "apropos", "offres", "realisations", "ecosysteme", 
 const NAV_LABELS = { accueil: "Accueil", apropos: "À propos", offres: "Offres", ecosysteme: "Écosystème", parcours: "Parcours", realisations: "Réalisations", contact: "Contact" };
 
 const PACKAGES = [
-  { id: "audit", n: "01", title: "Audit & Stratégie Média", sub: "Point de départ", desc: "Diagnostic complet de votre écosystème média. Mix canal, performances, outils, organisation. Livrable : recommandation stratégique actionnable avec plan d'action priorisé.", deliverables: ["Audit de l'existant (mix média, KPIs, outils)", "Benchmark sectoriel", "Recommandation stratégique", "Plan d'action priorisé"], ideal: "Annonceurs ou agences qui veulent un regard extérieur senior avant d'engager des budgets." },
-  { id: "pilotage", n: "02", title: "Pilotage & Performance", sub: "Exécution maîtrisée", desc: "Coordination de vos dispositifs multicanaux, display, vidéo, CTV, DOOH, social. J'élabore les plans, j'anime les équipes trading et assure le suivi des KPIs de bout en bout.", deliverables: ["Plan média multicanaux", "Coordination des équipes trading", "Suivi de performance en continu", "Reporting et recommandations d'optimisation"], ideal: "Annonceurs avec des campagnes actives qui manquent de bande passante." },
-  { id: "relation", n: "03", title: "Relation Client & Satisfaction", sub: "Avantage structurel", desc: "Structuration de vos process de suivi client : rituels, indicateurs de satisfaction, formation des équipes. Transformer la relation client en levier de rétention.", deliverables: ["Audit des process CSM existants", "Rituels clients (kick-off, bilans, post-mortem)", "Indicateurs NPS et NRR", "Formation et coaching des équipes"], ideal: "Agences et ad tech qui veulent réduire le churn et augmenter la valeur client." },
-  { id: "conseil", n: "04", title: "Conseil & Développement d'Offre", sub: "Croissance structurée", desc: "Accompagnement stratégique sur votre positionnement, l'évolution de vos offres et l'identification de partenariats à valeur. Une perspective externe senior, nourrie de 10 ans de terrain en agence et ad tech.", deliverables: ["Analyse de positionnement", "Stratégie d'évolution d'offre", "Identification de partenariats stratégiques", "Business plan et roadmap"], ideal: "Agences ou ad tech en phase de structuration ou de pivot stratégique." },
-  { id: "ops", n: "05", title: "Process & Automatisation IA", sub: "Opérations augmentées", desc: "Audit de vos process sales, supply, opérations et CSM, puis intégration concrète de l'IA dans chaque pôle et entre les pôles. Chez Olyzon, génération des médiaplans et inclusion lists, suivi des briefs et relances automatisés en moins de 3 mois.", deliverables: ["Audit des process et irritants par pôle", "Cartographie des tâches automatisables", "Workflows IA déployés et documentés", "Adoption et formation des équipes"], ideal: "Ad tech, régies et agences dont les équipes ops passent trop de temps sur des tâches répétitives." },
+  { id: "audit", n: "01", title: "Audit & Stratégie Média", sub: "Point de départ", desc: "Diagnostic complet de votre écosystème média. Mix canal, performances, outils, organisation. Livrable : recommandation stratégique actionnable avec plan d'action priorisé.", deliverables: ["Audit de l'existant (mix média, KPIs, outils)", "Benchmark sectoriel", "Recommandation stratégique", "Plan d'action priorisé"], ideal: "Agences, régies et ad tech qui veulent un regard extérieur senior avant d'engager des budgets ou de revoir leur organisation.", format: "Mission courte, 2 à 4 semaines" },
+  { id: "pilotage", n: "02", title: "Pilotage & Performance", sub: "Exécution maîtrisée", desc: "Coordination de vos dispositifs multicanaux, display, vidéo, CTV, DOOH, social. J'élabore les plans, j'anime les équipes trading et assure le suivi des KPIs de bout en bout.", deliverables: ["Plan média multicanaux", "Coordination des équipes trading", "Suivi de performance en continu", "Reporting et recommandations d'optimisation"], ideal: "Agences et ad tech avec des campagnes actives qui manquent de bande passante.", format: "Temps partagé, 2 à 3 jours par semaine" },
+  { id: "relation", n: "03", title: "Relation Client & Satisfaction", sub: "Avantage structurel", desc: "Structuration de vos process de suivi client : rituels, indicateurs de satisfaction, formation des équipes. Transformer la relation client en levier de rétention.", deliverables: ["Audit des process CSM existants", "Rituels clients (kick-off, bilans, post-mortem)", "Indicateurs NPS et NRR", "Formation et coaching des équipes"], ideal: "Agences et ad tech qui veulent réduire le churn et augmenter la valeur client.", format: "Mission de 1 à 3 mois" },
+  { id: "conseil", n: "04", title: "Conseil & Développement d'Offre", sub: "Croissance structurée", desc: "Accompagnement stratégique sur votre positionnement, l'évolution de vos offres et l'identification de partenariats à valeur. Une perspective externe senior, nourrie de 10 ans de terrain en agence et ad tech.", deliverables: ["Analyse de positionnement", "Stratégie d'évolution d'offre", "Identification de partenariats stratégiques", "Business plan et roadmap"], ideal: "Agences ou ad tech en phase de structuration ou de pivot stratégique.", format: "Accompagnement mensuel" },
+  { id: "ops", n: "05", title: "Process & Automatisation IA", sub: "Opérations augmentées", desc: "Audit de vos process sales, supply, opérations et CSM, puis mise en place d'outils agentiques dans chaque pôle et entre les pôles. Objectif : harmoniser les process et libérer du temps pour les équipes commerciales et opérations.", deliverables: ["Audit des process et irritants par pôle", "Cartographie des tâches automatisables", "Workflows IA déployés et documentés", "Adoption et formation des équipes"], ideal: "Ad tech, régies et agences dont les équipes passent trop de temps sur des tâches répétitives.", format: "Audit puis déploiement, 1 à 3 mois" },
 ];
 
 const REALISATIONS = [
   {
-    title: "Industrialisation supply CTV",
+    title: "Harmonisation des process média",
     ctx: "Olyzon · 2026",
     result: "<3 mois",
-    resultLabel: "MÉDIAPLANS & INCLUSION LISTS AUTOMATISÉS",
-    desc: "Mission Supply & Operations pour Olyzon, plateforme de decisioning CTV pilotée par agents IA (US et Europe). Qualification des briefs et des contraintes partenaires, construction des médiaplans et inclusion lists pour des annonceurs luxe et finance, support sales sur les deals à fort enjeu. Génération des médiaplans et inclusion lists, suivi des briefs, relances et statuts automatisés en moins de 3 mois."
+    resultLabel: "PROCESS MÉDIA AUTOMATISÉS",
+    desc: "Mission Supply & Operations pour Olyzon, plateforme de decisioning CTV (US et Europe). Mise en place d'outils agentiques pour harmoniser et automatiser les process : génération des médiaplans et inclusion lists, suivi des briefs, relances et statuts. Objectif : fluidifier la création des plans média pour les équipes commerciales et opérations."
   },
   {
     title: "Qualité d'inventaire CTV",
     ctx: "Olyzon · 2026",
     result: "VTR",
     resultLabel: "INVENTAIRE QUALIFIÉ À L'INTERNATIONAL",
-    desc: "Mapping des chaînes et bundle IDs par pays, exclusion des applications à faible taux de complétion, pilotage de l'inventaire sous l'angle marge et plus seulement disponibilité. Mission prolongée deux fois en quatre mois, périmètre étendu au lead supply : qualité, diversification et monitoring de l'inventaire."
+    desc: "Mapping des chaînes et bundle IDs par pays, exclusion des applications à faible taux de complétion, suivi de l'inventaire au regard de la qualité et de la marge. Accompagnement des équipes sur la diversification et le monitoring de l'inventaire."
   },
   {
     title: "Lancement NOVO19",
@@ -75,7 +75,7 @@ const REALISATIONS = [
 ];
 
 const MILESTONES = [
-  { year: "2026", role: "Consultant Supply & Operations", co: "Olyzon · Mission freelance", desc: "Plateforme de decisioning CTV. Médiaplans, inclusion lists et process supply automatisés en moins de 3 mois. Mission prolongée deux fois, lead étendu à la qualité d'inventaire.", current: true },
+  { year: "2026", role: "Consultant Supply & Operations", co: "Olyzon · Mission freelance", desc: "Plateforme de decisioning CTV. Harmonisation et automatisation des process média via des outils agentiques, construction des médiaplans et inclusion lists, qualité d'inventaire.", current: true },
   { year: "2025", role: "Fondateur", co: "Cadence Conseil", desc: "Lancement de Cadence Conseil. Accompagnement d'agences, d'annonceurs et d'acteurs ad tech sur la stratégie média et la relation client.", current: true },
   { year: "2024", role: "Directeur du Planning et de la Stratégie Média", co: "Olyn Group · Mozoo", desc: "+5M€ budget, 250+ campagnes/an, 8 pers." },
   { year: "2023", role: "Directeur des Opérations", co: "Mozoo", desc: "Partenariats ad tech, lancement offre vidéo." },
@@ -296,7 +296,7 @@ export default function NPConsultingV6() {
             <h1 className="hero-h1" style={{ fontFamily:"'Barlow Condensed',sans-serif", fontSize:"clamp(80px,14vw,176px)", fontWeight:900, lineHeight:0.88, letterSpacing:"-3px", marginBottom:0, textTransform:"uppercase", color:"#111", maxWidth:1200 }}>
               STRATÉGIE<br />
               <span style={{ color:"#3D6B5E", fontStyle:"italic" }}>MÉDIA</span><br />
-              & PERFORMANCE
+              & OPÉRATIONS
             </h1>
           </Reveal>
         </div>
@@ -372,17 +372,17 @@ export default function NPConsultingV6() {
               <div>
                 <div className="tag">À propos</div>
                 <h2 style={{ fontFamily:"'Barlow Condensed',sans-serif", fontSize:"clamp(48px,6vw,80px)", fontWeight:900, lineHeight:0.9, letterSpacing:"-1px", textTransform:"uppercase", color:"#EEECE8", marginBottom:32 }}>
-                  CHEF DE PROJET<br />
-                  <span style={{ color:"#3D6B5E", fontStyle:"italic" }}>SENIOR</span>
+                  CONSULTANT<br />
+                  <span style={{ color:"#3D6B5E", fontStyle:"italic" }}>MÉDIA & OPS</span>
                 </h2>
                 <p style={{ fontFamily:"'Barlow Condensed',sans-serif", fontSize:22, fontWeight:400, fontStyle:"italic", lineHeight:1.4, color:"rgba(238,236,232,0.6)", marginBottom:28, maxWidth:500 }}>
-                  Chef de projet senior, j'opère sur l'ensemble du dispositif : de la recommandation au pilotage, en coordonnant les expertises au bon moment.
+                  Ex directeur de la stratégie média, j'interviens sur l'ensemble du dispositif : de la recommandation au pilotage, jusqu'à l'organisation des équipes qui l'exécutent.
                 </p>
                 <p className="body-text" style={{ color:"rgba(238,236,232,0.5)", marginBottom:20 }}>
                   D'account manager à directeur de la stratégie média et des opérations, j'ai construit mon expertise autour de la relation client, de la connaissance accrue de l'écosystème média, du pilotage de budget média et de la structuration d'équipe.
                 </p>
                 <p className="body-text" style={{ color:"rgba(238,236,232,0.5)", marginBottom:40 }}>
-                  Entre Bordeaux et Paris, j'accompagne agences, acteurs ad tech et annonceurs, avec un objectif commun : gagner en efficacité sur les dispositifs média et la relation client.
+                  Entre Bordeaux et Paris, j'accompagne acteurs ad tech, régies et agences, avec un objectif commun : gagner en efficacité sur les dispositifs média, les opérations et la relation client.
                 </p>
                 <div style={{ display:"flex", flexWrap:"wrap", gap:8 }}>
                   {["Stratégie média","Pilotage multicanaux","Relation client CSM","Performance reporting","Développement d'offre","Partenariats ad tech","Supply CTV","Automatisation IA","Management d'équipe","Recrutement","Gouvernance & board"].map((c, i) => (
@@ -439,6 +439,9 @@ export default function NPConsultingV6() {
                           </div>
                           <div style={{ fontFamily:"'Barlow',sans-serif", fontSize:13, color:"rgba(17,17,17,0.45)", fontStyle:"italic", paddingTop:16, borderTop:"1px solid rgba(17,17,17,0.08)" }}>
                             Pour qui : {pkg.ideal}
+                          </div>
+                          <div style={{ fontFamily:"'Barlow Condensed',sans-serif", fontSize:12, fontWeight:700, letterSpacing:2, textTransform:"uppercase", color:"#3D6B5E", paddingTop:10 }}>
+                            Format : {pkg.format}
                           </div>
                         </div>
                       </div>
