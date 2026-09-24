@@ -167,6 +167,7 @@ export default function NPConsultingV6() {
           .eco-grid { grid-template-columns:1fr !important; }
           .real-grid { grid-template-columns:1fr !important; }
           .stats-r { grid-template-columns:repeat(2,1fr) !important; }
+          .pkg-item { padding:24px 16px !important; }
         }
 
         .w { max-width:1400px; margin:0 auto; padding:0 48px; }
@@ -214,7 +215,7 @@ export default function NPConsultingV6() {
         }
 
         .pkg-item {
-          border-top:2px solid #111; padding:28px 0; cursor:pointer;
+          border-top:2px solid #111; padding:28px 32px; cursor:pointer;
           transition:background 0.2s;
         }
         .pkg-item:last-child { border-bottom:2px solid #111; }
