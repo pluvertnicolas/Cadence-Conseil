@@ -24,13 +24,6 @@ const REALISATIONS = [
     desc: "Mission Supply & Operations pour Olyzon, plateforme de decisioning CTV (US et Europe). Mise en place d'outils agentiques pour harmoniser et automatiser les process : génération des médiaplans et inclusion lists, suivi des briefs, relances et statuts. Objectif : fluidifier la création des plans média pour les équipes commerciales et opérations."
   },
   {
-    title: "Qualité d'inventaire CTV",
-    ctx: "Olyzon · 2026",
-    result: "VTR",
-    resultLabel: "INVENTAIRE QUALIFIÉ À L'INTERNATIONAL",
-    desc: "Mapping des chaînes et bundle IDs par pays, exclusion des applications à faible taux de complétion, suivi de l'inventaire au regard de la qualité et de la marge. Accompagnement des équipes sur la diversification et le monitoring de l'inventaire."
-  },
-  {
     title: "Lancement NOVO19",
     ctx: "Olyn Group · 2025",
     result: "1,45M€",
@@ -75,7 +68,7 @@ const REALISATIONS = [
 ];
 
 const MILESTONES = [
-  { year: "2026", role: "Consultant Supply & Operations", co: "Olyzon · Mission freelance", desc: "Plateforme de decisioning CTV. Harmonisation et automatisation des process média via des outils agentiques, construction des médiaplans et inclusion lists, qualité d'inventaire.", current: true },
+  { year: "2026", role: "Consultant Supply & Operations", co: "Olyzon · Mission freelance", desc: "Plateforme de decisioning CTV. Harmonisation et automatisation des process média via des outils agentiques, pour fluidifier la création des plans média des équipes commerciales et opérations.", current: true },
   { year: "2025", role: "Fondateur", co: "Cadence Conseil", desc: "Lancement de Cadence Conseil. Accompagnement d'agences, d'annonceurs et d'acteurs ad tech sur la stratégie média et la relation client.", current: true },
   { year: "2024", role: "Directeur du Planning et de la Stratégie Média", co: "Olyn Group · Mozoo", desc: "+5M€ budget, 250+ campagnes/an, 8 pers." },
   { year: "2023", role: "Directeur des Opérations", co: "Mozoo", desc: "Partenariats ad tech, lancement offre vidéo." },
@@ -248,6 +241,7 @@ export default function NPConsultingV6() {
           transition:all 0.3s; position:relative;
           display:flex; flex-direction:column; height:100%;
         }
+        .real-span { grid-column:1 / -1; }
         .real-card:hover { background:#131411; color:#EEECE8; }
         .real-card:hover .real-label { color:rgba(238,236,232,0.4); }
         .real-card:hover .real-num { color:#3D6B5E; }
@@ -463,7 +457,7 @@ export default function NPConsultingV6() {
           </Reveal>
           <div className="real-grid" style={{ display:"grid", gridTemplateColumns:"repeat(2,1fr)", gap:1, background:"rgba(238,236,232,0.08)", marginTop:48, alignItems:"stretch" }}>
             {REALISATIONS.map((r, i) => (
-              <Reveal key={i} delay={i * 0.08}>
+              <Reveal key={i} delay={i * 0.08} className={REALISATIONS.length % 2 && i === REALISATIONS.length - 1 ? "real-span" : ""}>
                 <div className="real-card" style={{ background:"#111", borderColor:"rgba(238,236,232,0.1)" }}>
                   <div className="real-ctx" style={{ fontFamily:"'Barlow Condensed',sans-serif", fontSize:11, letterSpacing:3, textTransform:"uppercase", color:"rgba(238,236,232,0.3)", marginBottom:24, transition:"color 0.3s" }}>{r.ctx}</div>
                   <div className="real-num" style={{ fontFamily:"'Barlow Condensed',sans-serif", fontSize:"clamp(64px,8vw,96px)", fontWeight:900, color:"#3D6B5E", lineHeight:0.85, letterSpacing:"-2px", marginBottom:4, transition:"color 0.3s" }}>{r.result}</div>
